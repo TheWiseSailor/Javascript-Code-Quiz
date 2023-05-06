@@ -18,6 +18,13 @@ body {
   align-items: center;
   height: 100vh;
 }
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* h sections */
 h1 {
   font-size: 3rem;
