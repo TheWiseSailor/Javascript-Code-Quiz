@@ -44,6 +44,8 @@ header div {
   font-size: 0.5cm;
   font-weight: 100;
   background-color: transparent;
+  display: flex;
+  justify-content: center;
 }
 .high-score {
   font-size: 0.5cm;
@@ -136,4 +138,42 @@ section .wrapper {
   margin: 5px;
   border-radius: 10px;
   background-color: var(--primary-color);
+}
+.answer-btn:active {
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px rgb(214, 71, 71);
+  transform: translateY(1px);
+}
+/*score list*/
+.score-list {
+  padding-left: 35px;
+}
+.span-1 {
+  height: 30px;
+}
+/* this is where the hidden page elements will go*/
+
+#questions,
+#final-score,
+#high-scores,
+#correct-wrong {
+  display: none;
+}
+/* media section*/
+@media screen and (max-width: 375px) {
+  h2,
+  .switch {
+    font-size: 0.4cm;
+  }
+  div .p-style {
+    font-size: 0.4cm;
+    text-align: justify;
+    padding: 0px 50px;
+  }
+  .list-inner {
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-auto-rows: (10px, auto);
+    justify-items: center;
+  }
 }
