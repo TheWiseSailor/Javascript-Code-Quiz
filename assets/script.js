@@ -14,7 +14,8 @@
 //THEN I can save my initials and score
 //made changes to js not html, my fault lol
 //adding a variable for the timer
-var time = document.querySelector(".timer");
+
+var time = document.querySelector(".timer"); //line 17
 var score = document.querySelector("#score");
 var secondsLeft = 75;
 //adding a variable for the buttons
@@ -27,6 +28,13 @@ var questionsEl = document.querySelector(".all-question");
 let questionEl = document.querySelector("#question");
 let questionCount = 0;
 const correctWrong = document.querySelector("#right-wrong");
+//making a final score variable
+const finalEl = document.querySelector("#final-score");
+let initialsInput = document.querySelector("#initials");
+//making a Highscore variable as well
+const highscoresEl = document.querySelector("#highscores"); //line 58 in html
+let scoreListEl = document.querySelector(".score-list");
+let scoreList = [];
 
 //Make the questions
 // Instructer said that we have to dio a minimum of 5 questions
