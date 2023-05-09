@@ -13,6 +13,11 @@
 //WHEN the game is over
 //THEN I can save my initials and score
 
+//adding a variable for the timer
+var time = document.querySelector(".timer");
+var score = document.querySelector("#score");
+var secondsLeft = 75;
+
 //Make the questions
 // Instructer said that we have to dio a minimum of 5 questions
 const questions = [
