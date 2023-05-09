@@ -12,7 +12,7 @@
 //THEN the game is over
 //WHEN the game is over
 //THEN I can save my initials and score
-
+//made changes to js not html, my fault lol
 //adding a variable for the timer
 var time = document.querySelector(".timer");
 var score = document.querySelector("#score");
