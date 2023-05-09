@@ -23,6 +23,10 @@ const start = document.querySelector("#start");
 const quizIntro = document.querySelector("#challenge-begins");
 //calling the end load element variable
 var questionsEl = document.querySelector(".all-question");
+//identifying the element locations and variables
+let questionEl = document.querySelector("#question");
+let questionCount = 0;
+const correctWrong = document.querySelector("#right-wrong");
 
 //Make the questions
 // Instructer said that we have to dio a minimum of 5 questions
