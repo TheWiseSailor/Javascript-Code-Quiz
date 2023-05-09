@@ -35,7 +35,13 @@ let initialsInput = document.querySelector("#initials");
 const highscoresEl = document.querySelector("#highscores"); //line 58 in html
 let scoreListEl = document.querySelector(".score-list");
 let scoreList = [];
-
+//marking the answer class button
+const ansBtn = document.querySelectorAll("button.answerbtn");
+// variables for submit, go,clear , view
+let submitScrBtn = document.querySelector("#submitscore");
+let clearScrBtn = document.querySelector("clearScores");
+let viewScrBtn = document.querySelector("view-scores");
+let goBackBtn = document.querySelector("#goBack");
 //Make the questions
 // Instructer said that we have to dio a minimum of 5 questions
 const questions = [
