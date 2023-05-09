@@ -17,6 +17,8 @@
 var time = document.querySelector(".timer");
 var score = document.querySelector("#score");
 var secondsLeft = 75;
+//adding a variable for the buttons
+const start = document.querySelector("#start");
 
 //Make the questions
 // Instructer said that we have to dio a minimum of 5 questions
