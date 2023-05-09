@@ -21,6 +21,8 @@ var secondsLeft = 75;
 const start = document.querySelector("#start");
 //making a variable for the intro startt button so that the challenge begins
 const quizIntro = document.querySelector("#challenge-begins");
+//calling the end load element variable
+var questionsEl = document.querySelector(".all-question");
 
 //Make the questions
 // Instructer said that we have to dio a minimum of 5 questions
