@@ -145,21 +145,27 @@ function addScore(event) {
   highscoresEl.style.display = "block";
   let init = initialsInput.value.toUpperCase();
   scoreList.push({ initials: init, score: secondsLeft });
-}
-//highscore srorting list
-scoreList = scoreList.sort((a, b) => {
-  if (a.score < b.score) {
-    return 1;
-  } else {
-    return -1;
+
+  //highscore srorting list
+  scoreList = scoreList.sort((a, b) => {
+    if (a.score < b.score) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+
+  scoreListEl.innerHTML = "";
+  for (let i = 0; i < scoreList.length; i++) {
+    let li = document.createElement("li");
+    li.textContent = `${scoreList[i].initials}: ${scoreList[i].score}`;
+    scoreListEl.append(li);
   }
-});
-scoreListEl.innerHTML = "";
-for (let i = o; i < scoreList.length; i++) {
-  let li = document.createElement("li");
-  li.textContent = `${scoreList[i].initials}; ${scoreList[i].score}`;
-  scoreListEl.append(li);
+
+  storeScores();
+  displayScores();
 }
+
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
 // event.target would contain the reference to the element which invoked this method/event
