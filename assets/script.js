@@ -131,3 +131,12 @@ function setTime() {
 setTimeout(function () {
   p.style.display = "none";
 }, 1000);
+
+//adding an event listener to the event function
+goBackBtn.addEventListener("click", function () {
+  highscoresEl.style.display = "none";
+  quizIntro.style.display = "block";
+  questionCount = 0;
+  setTime();
+  setQuestion(questionCount);
+});
