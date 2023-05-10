@@ -129,5 +129,5 @@ function setTime() {
 
 //displaying what ever time is left
 setTimeout(function () {
-  package.style.display = "none";
+  p.style.display = "none";
 }, 1000);
