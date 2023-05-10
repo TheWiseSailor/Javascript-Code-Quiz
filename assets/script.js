@@ -102,3 +102,12 @@ const questions = [
     correctAnswer: 4,
   },
 ];
+
+//function alert(event) {
+// event.type contains whether this event was invoked in the result of a click etc
+// event.target would contain the reference to the element which invoked this method/event
+//}
+// above will be used for reference, provided by stackoverflow
+// we can apply the if statments inside the functions
+
+//I need to get the timer to start working, going to look in the UNCC coding lessions and see how I can apply the timer on it to this.
