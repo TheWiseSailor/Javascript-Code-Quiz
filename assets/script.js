@@ -124,6 +124,15 @@ function checkAnswer(event) {
 corredtWrong.style.display = "block";
 let p = document.createElement("p");
 correctWrong.appendChild(p);
+//right or wrong conditional statements that lead to being correct and wrong
+if (questions[questionCount].correctAnswer === parseInt(event.target.value)) {
+  p.textContent = "Correct!";
+} else if (
+  questions[questionCount].correctAnswer !== parseInt(event.target.value)
+) {
+  secondsLeft = secondsLeft - 100; // doing 100 cas they should know what it is by now
+  p.textContent = "wrong!";
+}
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
 // event.target would contain the reference to the element which invoked this method/event
@@ -141,8 +150,8 @@ function setTime() {
     time.textContent = `Time:${secondsLeft}s`;
     if (secondsLeft === 0 || questionCount === questions.length) {
       clearInterval(timerInterval);
-      questionsEl.getElementsByClassName.display = "none";
-      finalEl.getElementsByClassName.display = "block";
+      questionsEl.style.display = "none";
+      finalEl.style.display = "block";
       score.textContent = secondsLeft;
     }
   }, 1000);
@@ -157,9 +166,8 @@ setTimeout(function () {
 goBackBtn.addEventListener("click", function () {
   highscoresEl.style.display = "none";
   quizIntro.style.display = "block";
-  questionCount = 0;
-  setTime();
-  setQuestion(questionCount);
+  secondsLeft = 75;
+  time.textContent = `Time:${secondsLeft}s`;
 });
 //watched demonslayer ep  and now back to work
 //time to start making the scores
