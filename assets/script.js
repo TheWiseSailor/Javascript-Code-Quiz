@@ -15,11 +15,12 @@
 //made changes to js not html, my fault lol
 //adding a variable for the timer
 
+//change all const to var since instructor hasnt taught it yet, even tho i did research on stack overflow
 var time = document.querySelector(".timer"); //line 17
-var score = document.querySelector("#score");
+const score = document.querySelector("#score");
 var secondsLeft = 75;
 //adding a variable for the buttons
-const start = document.querySelector("#start");
+var start = document.querySelector("#start");
 //making a variable for the intro startt button so that the challenge begins
 const quizIntro = document.querySelector("#challenge-begins");
 //calling the end load element variable
@@ -176,6 +177,7 @@ function displayScores() {
 if (storedScoreList !== null) {
   scoreList = storedScoreList;
 }
+//making a function to clear the scores
 
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
@@ -214,4 +216,3 @@ goBackBtn.addEventListener("click", function () {
   time.textContent = `Time:${secondsLeft}s`;
 });
 //watched demonslayer ep  and now back to work
-
