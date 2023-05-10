@@ -133,6 +133,19 @@ if (questions[questionCount].correctAnswer === parseInt(event.target.value)) {
   secondsLeft = secondsLeft - 100; // doing 100 cas they should know what it is by now
   p.textContent = "wrong!";
 }
+
+//cycling
+if (questionCount < questions.length) {
+  questionCount++;
+}
+setQuestion(questionCount);
+function addScore(event) {
+  event.preventDefault();
+  finalEl.style.display = "none";
+  highscoresEl.style.display = "block";
+  let init = initialsInput.value.toUpperCase();
+  scoreList.push({ initials: init, score: secondsLeft });
+}
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
 // event.target would contain the reference to the element which invoked this method/event
