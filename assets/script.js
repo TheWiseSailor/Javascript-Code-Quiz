@@ -165,6 +165,17 @@ function addScore(event) {
   storeScores();
   displayScores();
 }
+function storeScores() {
+  localStorage.setItem("scoreList", JSON.stringify(scoreList));
+}
+function displayScores() {
+  //parsed JSON to object
+  let storedScoreList = JSON.parse(localStorage.getItem("scoreList"));
+}
+//adding an if statement to it to when retirved from local, array
+if (storedScoreList !== null) {
+  scoreList = storedScoreList;
+}
 
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
@@ -203,5 +214,4 @@ goBackBtn.addEventListener("click", function () {
   time.textContent = `Time:${secondsLeft}s`;
 });
 //watched demonslayer ep  and now back to work
-//time to start making the scores
-scoreList;
+
