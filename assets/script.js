@@ -111,3 +111,23 @@ const questions = [
 // we can apply the if statments inside the functions
 
 //I need to get the timer to start working, going to look in the UNCC coding lessions and see how I can apply the timer on it to this.
+
+//timer function
+
+function setTime() {
+  let timerInterval = setInterval(function () {
+    secondsLeft--;
+    time.textContent = `Time:${secondsLeft}s`;
+    if (secondsLeft === 0 || questionCount === questions.length) {
+      clearInterval(timerInterval);
+      questionsEl.getElementsByClassName.display = "none";
+      finalEl.getElementsByClassName.display = "block";
+      score.textContent = secondsLeft;
+    }
+  }, 1000);
+}
+
+//displaying what ever time is left
+setTimeout(function () {
+  package.style.display = "none";
+}, 1000);
