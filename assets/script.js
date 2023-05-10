@@ -116,7 +116,10 @@ function setQuestion(id) {
     ans6btn.textContent = questions[id].answers[5];
   }
 }
-
+//making a function to where it checks the answers being processed
+function checkAnswer(event) {
+  event.preventDefault();
+}
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
 // event.target would contain the reference to the element which invoked this method/event
