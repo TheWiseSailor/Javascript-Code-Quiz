@@ -102,6 +102,20 @@ const questions = [
     correctAnswer: 4,
   },
 ];
+//I FROGOT TO ADD THE QUESTION FUNCTIONS
+//NOTE GET THIS DONE BEFORE THE ASSOCIATES GRADUATION CEREMONY TOMORROW... JUST DO IT
+
+function setQuestion(id) {
+  if (id < questions.length) {
+    questionEl.textContent = questions[id].questions;
+    ans1btn.textContent = questions[id].answers[0];
+    ans2btn.textContent = questions[id].answers[1];
+    ans3btn.textContent = questions[id].answers[2];
+    ans4btn.textContent = questions[id].answers[3];
+    ans5btn.textContent = questions[id].answers[4];
+    ans6btn.textContent = questions[id].answers[5];
+  }
+}
 
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
@@ -140,3 +154,6 @@ goBackBtn.addEventListener("click", function () {
   setTime();
   setQuestion(questionCount);
 });
+//watched demonslayer ep  and now back to work
+//time to start making the scores
+scoreList;
