@@ -120,6 +120,10 @@ function setQuestion(id) {
 function checkAnswer(event) {
   event.preventDefault();
 }
+//makesomethin of sort to whwere the elementis either right or wrong
+corredtWrong.style.display = "block";
+let p = document.createElement("p");
+correctWrong.appendChild(p);
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
 // event.target would contain the reference to the element which invoked this method/event
