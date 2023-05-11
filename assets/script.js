@@ -82,14 +82,14 @@ var questions = [
       "if i = 5",
       "if i != 5",
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question: "How do you start a 'for' loop in JavaScript?",
     answers: [
       "for (i <= 5; i++)",
-      "for (i = 0; i <= 5)",
       "for i = 1 to 5",
+      "for (i = 0; i <= 5)",
       "for (i = 0; i <= 5; i++)",
       "for (i = 0; i <= 5; i+++)",
     ],
@@ -102,6 +102,7 @@ var questions = [
     correctAnswer: 2,
   },
 ];
+
 //I FROGOT TO ADD THE QUESTION FUNCTIONS
 //NOTE GET THIS DONE BEFORE THE ASSOCIATES GRADUATION CEREMONY TOMORROW... JUST DO IT
 //I need to get the timer to start working, going to look in the UNCC coding lessions and see how I can apply the timer on it to this.
@@ -138,7 +139,6 @@ function setQuestion(id) {
     ans3Btn.textContent = questions[id].answers[2];
     ans4Btn.textContent = questions[id].answers[3];
     ans5Btn.textContent = questions[id].answers[4];
-
     ans6Btn.textContent = questions[id].answers[5];
   }
 }
