@@ -45,9 +45,9 @@ You can view the high scores at any time to see how you did, compared to others.
 
 # Technologies Used
 
-**HTML**
-**CSS**
-**JavaScript**
+**HTML**<br>
+**CSS**<br>
+**JavaScript**<br>
 
 # Sources
 
