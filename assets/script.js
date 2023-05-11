@@ -178,7 +178,10 @@ if (storedScoreList !== null) {
   scoreList = storedScoreList;
 }
 //making a function to clear the scores
-
+function clearScores() {
+  localStorage.clear();
+  scoreListEl.innerHTML = "";
+}
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
 // event.target would contain the reference to the element which invoked this method/event
