@@ -241,3 +241,4 @@ viewScrBtn.addEventListener("click", function () {
     return alert("Take Quiz. Be the highest score.");
   }
 });
+//i want to add some bootstrap html and css font to make it nice and pretty but i dont think I can since we just learned it
