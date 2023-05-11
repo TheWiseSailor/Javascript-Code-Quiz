@@ -102,7 +102,11 @@ var questions = [
     correctAnswer: 2,
   },
 ];
+//I FROGOT TO ADD THE QUESTION FUNCTIONS
+//NOTE GET THIS DONE BEFORE THE ASSOCIATES GRADUATION CEREMONY TOMORROW... JUST DO IT
+//I need to get the timer to start working, going to look in the UNCC coding lessions and see how I can apply the timer on it to this.
 
+//timer function
 function setTime() {
   let timerInterval = setInterval(function () {
     secondsLeft--;
@@ -116,7 +120,7 @@ function setTime() {
     }
   }, 1000);
 }
-
+//the function for which makes the quiz begin
 function startQuiz() {
   quizIntro.style.display = "none";
   questionsEl.style.display = "block";
@@ -125,7 +129,7 @@ function startQuiz() {
   setTime();
   setQuestion(questionCount);
 }
-
+//function for the set question
 function setQuestion(id) {
   if (id < questions.length) {
     questionEl.textContent = questions[id].question;
@@ -138,10 +142,10 @@ function setQuestion(id) {
     ans6Btn.textContent = questions[id].answers[5];
   }
 }
-
+//making a function to where it checks the answers being processed
 function checkAnswer(event) {
   event.preventDefault();
-
+  //makesomethin of sort to whwere the elementis either right or wrong
   correctWrong.style.display = "block";
   let p = document.createElement("p");
   correctWrong.appendChild(p);
@@ -149,7 +153,7 @@ function checkAnswer(event) {
   setTimeout(function () {
     p.style.display = "none";
   }, 1000);
-
+  //right or wrong conditional statements that lead to being correct and wrong
   if (questions[questionCount].correctAnswer === parseInt(event.target.value)) {
     p.textContent = "Correct!";
   } else if (
@@ -158,7 +162,7 @@ function checkAnswer(event) {
     secondsLeft = secondsLeft - 10;
     p.textContent = "Wrong!";
   }
-
+  //cycling
   if (questionCount < questions.length) {
     questionCount++;
   }
@@ -180,7 +184,7 @@ function addScore(event) {
       return -1;
     }
   });
-
+  //highscore sorting list
   scoreListEl.innerHTML = "";
   for (let i = 0; i < scoreList.length; i++) {
     let li = document.createElement("li");
@@ -195,28 +199,30 @@ function addScore(event) {
 function storeScores() {
   localStorage.setItem("scoreList", JSON.stringify(scoreList));
 }
-
+//parsed JSON to object
 function displayScores() {
   let storedScoreList = JSON.parse(localStorage.getItem("scoreList"));
-
+  //adding an if statement to it to when retirved from local, array
   if (storedScoreList !== null) {
     scoreList = storedScoreList;
   }
 }
-
+//making a function to clear the scores
 function clearScores() {
   localStorage.clear();
   scoreListEl.innerHTML = "";
 }
-
+//start event
 start.addEventListener("click", startQuiz);
-
+//score event
 ansBtn.forEach((item) => {
   item.addEventListener("click", checkAnswer);
 });
 
 submitScrBtn.addEventListener("click", addScore);
+//displaying what ever time is left
 
+//adding an event listener to the event function
 goBackBtn.addEventListener("click", function () {
   highscoresEl.style.display = "none";
   quizIntro.style.display = "block";
@@ -225,7 +231,7 @@ goBackBtn.addEventListener("click", function () {
 });
 
 clearScrBtn.addEventListener("click", clearScores);
-
+//highscore
 viewScrBtn.addEventListener("click", function () {
   if (highscoresEl.style.display === "none") {
     highscoresEl.style.display = "block";
