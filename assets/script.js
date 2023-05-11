@@ -182,6 +182,14 @@ function clearScores() {
   localStorage.clear();
   scoreListEl.innerHTML = "";
 }
+//start event
+start.addEventListener("click", startQuiz);
+//check answer lisneter event
+ansBtn.forEach((item) => {
+  item.addEventListener("click", checkAnswer);
+});
+//score event
+submitScrBtn.addEventListener("click", addScore);
 //function alert(event) {
 // event.type contains whether this event was invoked in the result of a click etc
 // event.target would contain the reference to the element which invoked this method/event
