@@ -60,3 +60,11 @@ https://www.codecademy.com/ <br>
 # License
 
 This project is licensed under the MIT License.
+
+# Deployed Site
+
+https://thewisesailor.github.io/Javascript-Code-Quiz/
+
+# Deployed Repository
+
+https://github.com/TheWiseSailor/Javascript-Code-Quiz
