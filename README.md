@@ -32,3 +32,31 @@ If a quesrtion is answered incorrectly, time will be deducted from the timer.<br
 The game ends when all questions ate answered or when the timer reaches 0<br>
 After the game ends, the user cans ave their initials and score.<br>
 The high scores are stored for future references and comparison.<br>
+
+# Usage
+
+To use the Coding Quiz application, **follow these steps**:<br>
+Click the "start" button to begin the quiz.<br>
+Read each question with care, then proceed to answer.<br>
+If the answer you choose is incorrect, it will notify you that you are indeed, incorrect. Vice Versa.<br>
+Continue answering the questions until you have completed the quiz, or when the timer reaches 0. <br>
+After the game ends, enter your initials to save your score.<br>
+You can view the high scores at any time to see how you did, compared to others.<br>
+
+# Technologies Used
+
+**HTML**
+**CSS**
+**JavaScript**
+
+# Sources
+
+https://www.youtube.com/ <br>
+https://stackoverflow.com/ <br>
+https://developer.mozilla.org/en-US/ <br>
+https://www.w3schools.com/ <br>
+https://www.codecademy.com/ <br>
+
+# License
+
+This project is licensed under the MIT License.
