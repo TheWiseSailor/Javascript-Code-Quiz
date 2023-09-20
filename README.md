@@ -68,3 +68,17 @@ https://thewisesailor.github.io/Javascript-Code-Quiz/
 # Deployed Repository
 
 https://github.com/TheWiseSailor/Javascript-Code-Quiz
+
+#
+
+![page 1 title](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/c84c2388-a0f9-48a0-998b-746aef3b3ea5)
+![page 2](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/239fbc40-b35f-44ce-9968-36b31b68b4e6)
+![page 3 question](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/a028404e-7154-44ba-884d-88cdfdbe85a7)
+![page 3 wrong](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/7cdc9966-f01b-4851-a527-893161d097ea)
+![page 4 question](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/3b9dcd63-f4a3-4d6c-ab17-836d229b89ea)
+![page 4 right](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/2664ef62-77c3-410d-a12e-77fca3b51ae0)
+![page 5 question](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/8a56a6ca-314b-429e-bcc8-cdf9cf15b34c)
+![page 6 question](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/be735829-c986-439e-a58e-d72bdaa66246)
+![final score](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/1d4c4d80-35a8-4c84-a6d8-14e82aafaa36)
+![highscores 1](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/dd38dc28-71e3-45dd-b238-b7eefe7dfd3e)
+![highscores 2](https://github.com/TheWiseSailor/Javascript-Code-Quiz/assets/68026214/50c263dc-fae8-4d58-8fbe-b9acfad5053a)
